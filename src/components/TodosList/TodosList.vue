@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2>Todos List</h2>
-    <ul>
+    <ul class="doto-list">
       <TodosListItem v-for="todo in todos" :key="todo.text" :todo="todo" />
     </ul>
   </section>
@@ -16,6 +16,7 @@ export default Vue.extend({
   components: {
     TodosListItem
   },
+  // hooks:
   created: function() {
     console.log("created hook");
   },

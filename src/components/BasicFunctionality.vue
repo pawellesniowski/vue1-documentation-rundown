@@ -45,9 +45,9 @@ export default Vue.extend({
       message: "Pawel Lesniowski",
       hoverMessage: "to jest hover over",
       todos: [
-        { text: "Learn JavaScript" },
-        { text: "Learn Vue" },
-        { text: "Build something awesome" }
+        { text: "Learn JavaScript", isDone: false },
+        { text: "Learn Vue", isDone: true },
+        { text: "Build something awesome", isDone: false }
       ],
       inputValues: ""
     };
@@ -61,3 +61,9 @@ export default Vue.extend({
   }
 });
 </script>
+
+<style scoped>
+h2 {
+  background-color: red;
+}
+</style>
