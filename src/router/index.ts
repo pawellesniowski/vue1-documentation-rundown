@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import BasicFunctionality from "../components/BasicFunctionality.vue";
+import FormInput from "../components/FormInput/FormInput.vue";
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,11 @@ const routes = [
     path: "/basic-functionality",
     name: "my first",
     component: BasicFunctionality
+  },
+  {
+    path: "/form",
+    name: "form input",
+    component: FormInput
   }
 ];
 
