@@ -2,7 +2,12 @@
   <section>
     <h2>Todos List</h2>
     <ul class="doto-list">
-      <TodosListItem v-for="todo in todos" :key="todo.text" :todo="todo" />
+      <TodosListItem
+        v-for="todo in todos"
+        :key="todo.text"
+        :todo="todo"
+        v-on:pawelsEvent="eventFromChild"
+      />
     </ul>
   </section>
 </template>
@@ -15,6 +20,11 @@ export default Vue.extend({
   props: ["todos"],
   components: {
     TodosListItem
+  },
+  methods: {
+    eventFromChild: function() {
+      console.log("hello I am an event from child!!");
+    }
   },
   // hooks:
   created: function() {
