@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import BasicFunctionality from "../components/BasicFunctionality.vue";
 import FormInput from "../components/FormInput/FormInput.vue";
+import AnimatedElements from "../components/AnimatedElements/AnimatedElements.vue";
 
 Vue.use(VueRouter);
 
@@ -30,6 +31,11 @@ const routes = [
     path: "/form",
     name: "form input",
     component: FormInput
+  },
+  {
+    path: "/animated-elements",
+    name: "Animated Elements",
+    component: AnimatedElements
   }
 ];
 
